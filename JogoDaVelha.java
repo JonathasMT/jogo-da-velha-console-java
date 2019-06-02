@@ -1,3 +1,4 @@
+//Developers: @jonathasmt e @matheus925467
 import java.util.Scanner;
 public class JogodaVelha {
 	public static void main(String[] args) {
@@ -10,14 +11,12 @@ public class JogodaVelha {
 		String X="X";
 		String O="O";
 		
-		//Developers: @jonathasmt e @matheus925467
-
 		System.out.println("TECLAS CORRESPONDENTES: ");
 		System.out.println("[7][8][9]");
 		System.out.println("[4][5][6]");
 		System.out.println("[1][2][3]");
 		
-		//loop enquanto n„o houver vencedor ou enquanto n„o estiver tudo preenchido
+		//loop enquanto n√£o houver vencedor ou enquanto n√£o estiver tudo preenchido
 		while(vencedor==0 && rodada!=9) {
 		
 		if(vencedor==0){
@@ -30,18 +29,18 @@ public class JogodaVelha {
 		
 		//RODADA DO JOGADOR "X"
 		while(jogadorX==0&&vencedor==0) {
-		System.out.println("Jogador 'X', onde sÈra sua jogada? ");
+		System.out.println("Jogador 'X', onde s√©ra sua jogada? ");
 		jogada = new Scanner(System.in).nextInt();
 		switch(jogada) {
-		case 1:if(velha[2][0]=="_"){velha[2][0]=X;jogadorX++;rodada++;}else{System.out.println("Jogada n„o Permitida!");}break;
-		case 2:if(velha[2][1]=="_"){velha[2][1]=X;jogadorX++;rodada++;}else{System.out.println("Jogada n„o Permitida!");}break;
-		case 3:if(velha[2][2]=="_"){velha[2][2]=X;jogadorX++;rodada++;}else{System.out.println("Jogada n„o Permitida!");}break;
-		case 4:if(velha[1][0]=="_"){velha[1][0]=X;jogadorX++;rodada++;}else{System.out.println("Jogada n„o Permitida!");}break;
-		case 5:if(velha[1][1]=="_"){velha[1][1]=X;jogadorX++;rodada++;}else{System.out.println("Jogada n„o Permitida!");}break;
-		case 6:if(velha[1][2]=="_"){velha[1][2]=X;jogadorX++;rodada++;}else{System.out.println("Jogada n„o Permitida!");}break;
-		case 7:if(velha[0][0]=="_"){velha[0][0]=X;jogadorX++;rodada++;}else{System.out.println("Jogada n„o Permitida!");}break;
-		case 8:if(velha[0][1]=="_"){velha[0][1]=X;jogadorX++;rodada++;}else{System.out.println("Jogada n„o Permitida!");}break;
-		case 9:if(velha[0][2]=="_"){velha[0][2]=X;jogadorX++;rodada++;}else{System.out.println("Jogada n„o Permitida!");}break;
+		case 1:if(velha[2][0]=="_"){velha[2][0]=X;jogadorX++;rodada++;}else{System.out.println("Jogada n√£o Permitida!");}break;
+		case 2:if(velha[2][1]=="_"){velha[2][1]=X;jogadorX++;rodada++;}else{System.out.println("Jogada n√£o Permitida!");}break;
+		case 3:if(velha[2][2]=="_"){velha[2][2]=X;jogadorX++;rodada++;}else{System.out.println("Jogada n√£o Permitida!");}break;
+		case 4:if(velha[1][0]=="_"){velha[1][0]=X;jogadorX++;rodada++;}else{System.out.println("Jogada n√£o Permitida!");}break;
+		case 5:if(velha[1][1]=="_"){velha[1][1]=X;jogadorX++;rodada++;}else{System.out.println("Jogada n√£o Permitida!");}break;
+		case 6:if(velha[1][2]=="_"){velha[1][2]=X;jogadorX++;rodada++;}else{System.out.println("Jogada n√£o Permitida!");}break;
+		case 7:if(velha[0][0]=="_"){velha[0][0]=X;jogadorX++;rodada++;}else{System.out.println("Jogada n√£o Permitida!");}break;
+		case 8:if(velha[0][1]=="_"){velha[0][1]=X;jogadorX++;rodada++;}else{System.out.println("Jogada n√£o Permitida!");}break;
+		case 9:if(velha[0][2]=="_"){velha[0][2]=X;jogadorX++;rodada++;}else{System.out.println("Jogada n√£o Permitida!");}break;
 		}		
 
 		//CASO JOGADOR "X" GANHE NAS HORIZONTAIS
@@ -81,18 +80,18 @@ public class JogodaVelha {
 			}
 		//RODADA DO JOGADOR "O"
 		while(jogadorO==0&&vencedor==0&&rodada!=9){
-		System.out.println("Jogador 'O', onde sÈra sua jogada? ");
+		System.out.println("Jogador 'O', onde s√©ra sua jogada? ");
 		jogada = new Scanner(System.in).nextInt();
 		switch(jogada) {
-		case 1:if(velha[2][0]=="_"){velha[2][0]=O;jogadorO++;rodada++;}else{System.out.println("Jogada n„o Permitida!");}break;
-		case 2:if(velha[2][1]=="_"){velha[2][1]=O;jogadorO++;rodada++;}else{System.out.println("Jogada n„o Permitida!");}break;
-		case 3:if(velha[2][2]=="_"){velha[2][2]=O;jogadorO++;rodada++;}else{System.out.println("Jogada n„o Permitida!");}break;
-		case 4:if(velha[1][0]=="_"){velha[1][0]=O;jogadorO++;rodada++;}else{System.out.println("Jogada n„o Permitida!");}break;
-		case 5:if(velha[1][1]=="_"){velha[1][1]=O;jogadorO++;rodada++;}else{System.out.println("Jogada n„o Permitida!");}break;
-		case 6:if(velha[1][2]=="_"){velha[1][2]=O;jogadorO++;rodada++;}else{System.out.println("Jogada n„o Permitida!");}break;
-		case 7:if(velha[0][0]=="_"){velha[0][0]=O;jogadorO++;rodada++;}else{System.out.println("Jogada n„o Permitida!");}break;
-		case 8:if(velha[0][1]=="_"){velha[0][1]=O;jogadorO++;rodada++;}else{System.out.println("Jogada n„o Permitida!");}break;
-		case 9:if(velha[0][2]=="_"){velha[0][2]=O;jogadorO++;rodada++;}else{System.out.println("Jogada n„o Permitida!");}break;
+		case 1:if(velha[2][0]=="_"){velha[2][0]=O;jogadorO++;rodada++;}else{System.out.println("Jogada n√£o Permitida!");}break;
+		case 2:if(velha[2][1]=="_"){velha[2][1]=O;jogadorO++;rodada++;}else{System.out.println("Jogada n√£o Permitida!");}break;
+		case 3:if(velha[2][2]=="_"){velha[2][2]=O;jogadorO++;rodada++;}else{System.out.println("Jogada n√£o Permitida!");}break;
+		case 4:if(velha[1][0]=="_"){velha[1][0]=O;jogadorO++;rodada++;}else{System.out.println("Jogada n√£o Permitida!");}break;
+		case 5:if(velha[1][1]=="_"){velha[1][1]=O;jogadorO++;rodada++;}else{System.out.println("Jogada n√£o Permitida!");}break;
+		case 6:if(velha[1][2]=="_"){velha[1][2]=O;jogadorO++;rodada++;}else{System.out.println("Jogada n√£o Permitida!");}break;
+		case 7:if(velha[0][0]=="_"){velha[0][0]=O;jogadorO++;rodada++;}else{System.out.println("Jogada n√£o Permitida!");}break;
+		case 8:if(velha[0][1]=="_"){velha[0][1]=O;jogadorO++;rodada++;}else{System.out.println("Jogada n√£o Permitida!");}break;
+		case 9:if(velha[0][2]=="_"){velha[0][2]=O;jogadorO++;rodada++;}else{System.out.println("Jogada n√£o Permitida!");}break;
 		}
 
 		//CASO JOGADOR "O" GANHE NAS HORIZONTAIS
@@ -124,7 +123,7 @@ public class JogodaVelha {
 			}
 		}jogadorX--;jogadorO--;
 		}
-		//Se n„o houver vencedor ao acabar todas as rodadas imprimira EMPATE!
+		//Se n√£o houver vencedor ao acabar todas as rodadas imprimira EMPATE!
 		if(rodada==9&&vencedor==0){
 		System.out.println(" ");System.out.println("EMPATE!");
 		}
